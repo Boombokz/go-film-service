@@ -1,0 +1,24 @@
+services:
+  api:
+    image: boombokz/filmservice-deploy:latest
+    container_name: film-service
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "8081:8081"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:17
+    container_name: film-service-db
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  db-data:
