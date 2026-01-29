@@ -1,20 +1,16 @@
-## FilmService
+### Film Service
+A personal online platform providing information about movies. The system allows users to rate movies, mark movies as watched, and create a watchlist.
 
-Личная онлайн-платформа, предоставляющая информацию о фильмах. Система позволяет оценивать фильмы, помечать фильмы 
-просмотренными и формировать очередь просмотра.
+### Functional Requirements
+* Create, edit, and delete movies and their details, including title, description, director, year of production, genre, trailer link, and poster;
+* Be able to sort and filter movies by criteria;
+* Be able to rate movies;
+* Be able to create a watchlist;
+* Be able to mark a movie as watched;
+* Create, edit, and delete genres;
+* Create, edit, reset passwords, and delete users;
+* Users must log in to the system using email and password.
 
-### Функциональные требования
-
-* Создавать, редактировать, удалять фильмы и их данные: включает название, описание, режиссера, год производства, жанр, ссылку на трейлер и постер;
-* Иметь возможность сортировать и фильтровать фильмы по критериям;
-* Иметь возможность оценивать фильмы;
-* Иметь возможность формировать очередь просмотров;
-* Иметь возможность пометить фильм просмотренным;
-* Создавать, редактировать, удалять жанры;
-* Создавать, редактировать, сбрасывать пароль, удалять пользователей;
-* Пользователь должен авторизоваться в системе по имейлу и паролю для входа
-
-### Нефункциональные требования
-
-* Наличие документированного API по спецификации OpenAPI
-* Возможность контейнеризировать приложение в Docker
+### Non-Functional Requirements
+* Documented API following the OpenAPI specification;
+* Ability to containerize the application using Docker.
